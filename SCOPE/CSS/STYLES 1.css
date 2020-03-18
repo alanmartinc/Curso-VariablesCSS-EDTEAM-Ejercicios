@@ -1,0 +1,22 @@
+/* Variables CSS (Custom properties) 
+
+Herencia
+Cascada
+
+*/
+
+:root {
+	--main-color:orange;
+}
+
+p {
+    color: var(--color);
+}
+
+article {
+	--color: red;
+}
+
+section {
+	--color: green;
+}
