@@ -1,0 +1,128 @@
+:hero {
+	--bg-color: #eee;
+	--bg-color-2: #fff;
+	--text-color: #53575A;
+	--accent-color: #007BDF;
+	--font: 'Open Sans', sans-serif;
+}
+
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+
+body {
+	display: grid;
+	min-height: calc(100vh - 2rem);
+	grid-template-columns: repeat(4,1fr);
+	grid-template-rows: 4rem 1fr 4rem;
+	grid-gap: 1rem;
+	margin: 1rem;
+	font-family: var(--font);
+}
+
+img {
+	max-width: 100%;
+}
+
+.header, footer {
+	grid-column: span 4;
+}
+
+.header,
+.sidebar,
+.main,
+.footer {
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
+
+.main {
+	grid-column: span 3;
+}
+
+.header,
+.footer {
+	display: flex;
+	align-items: center;
+}
+
+.nav {
+	margin-left: auto;
+}
+
+.menu {
+	list-style: none;
+	display: flex;
+}
+
+.menu li {
+	margin-left: 1rem;
+}
+
+.menu a {
+	text-decoration: none;
+}
+
+.footer {
+	justify-content: center;
+}
+
+.hero {
+	position: relative;
+	margin-bottom: 2rem;
+}
+
+.hero::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: .9;
+}
+
+.hero h1 {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 100%;
+	text-align: center;
+}
+
+/* Theme */
+
+body {
+	background: var(--bg-color);
+	color: var(--text-color);
+}
+
+a {
+	color: var(--accent-color);
+}
+
+.header,
+.foooter,
+.sidebar {
+	background: var(--bg-color-2);
+}
+
+.hero::before {
+	background: var(--accent-color);
+}
+
+.hero h1 {
+	color: var(--bg-color-2);
+}
+
+
+
+
+
+
+
+
+
+
+
+
