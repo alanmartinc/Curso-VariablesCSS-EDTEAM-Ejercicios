@@ -1,0 +1,29 @@
+/* Variables CSS (Custom properties) 
+
+Herencia
+Cascada
+
+*/
+
+:root {
+    --color: red;
+    --link-color: green;
+    --bg-color: yellow;
+    --box-shadow: 2px 2px 5px #000;
+}
+
+html {
+    background-color: var(--bg-color);
+}
+
+h1 {
+    box-shadow: var(--box-shadow);
+}
+
+a {
+    color: var(--link-color);
+}
+
+p {
+    color: var(--color);
+}
